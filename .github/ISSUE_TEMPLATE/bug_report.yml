@@ -1,0 +1,27 @@
+name: Integration bug
+description: Report a reproducible adapter or plugin problem.
+body:
+  - type: markdown
+    attributes:
+      value: Keep API keys, webhook secrets, enrollment links and customer data out of this public report.
+  - type: textarea
+    id: versions
+    attributes:
+      label: Package, framework and runtime versions
+      description: Include your operating system and the package install command.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps or minimal reproduction
+      description: Prefer the repository's simulated example or a small reproduction with no real customer data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result and actual result
+      description: Include redacted error output if relevant.
+    validations:
+      required: true
