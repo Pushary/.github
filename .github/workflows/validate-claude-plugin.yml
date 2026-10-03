@@ -1,0 +1,68 @@
+name: Validate Claude plugin
+
+on:
+  workflow_call:
+    inputs:
+      full_matrix:
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Install on ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ${{ fromJSON(inputs.full_matrix && '["ubuntu-latest","macos-latest","windows-latest"]' || '["ubuntu-latest"]') }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    defaults:
+      run:
+        shell: bash
+    env:
+      CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC: "1"
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: "22"
+      - name: Set an isolated profile
+        run: echo "CLAUDE_CONFIG_DIR=$RUNNER_TEMP/pushary-plugin-check" >> "$GITHUB_ENV"
+      - name: Install Claude Code
+        run: npm install --global @anthropic-ai/claude-code@2.1.288
+      - name: Validate both manifests
+        run: |
+          claude plugin validate . --strict
+          claude plugin validate .claude-plugin/plugin.json --strict
+      - name: Install into an isolated profile
+        run: |
+          marketplace=$(node -p "JSON.parse(require('fs').readFileSync('.claude-plugin/marketplace.json', 'utf8')).name")
+          plugin=$(node -p "JSON.parse(require('fs').readFileSync('.claude-plugin/plugin.json', 'utf8')).name")
+          claude plugin marketplace add "$GITHUB_WORKSPACE"
+          claude plugin install "$plugin@$marketplace" --json
+          claude plugin list --json > "$RUNNER_TEMP/plugin-list.json"
+          claude plugin details "$plugin@$marketplace" > "$RUNNER_TEMP/plugin-details.txt"
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict'
+          import { readFileSync, existsSync } from 'node:fs'
+          import { join } from 'node:path'
+          const manifest = JSON.parse(readFileSync('.claude-plugin/plugin.json', 'utf8'))
+          const marketplace = JSON.parse(readFileSync('.claude-plugin/marketplace.json', 'utf8'))
+          const installed = JSON.parse(readFileSync(join(process.env.RUNNER_TEMP, 'plugin-list.json'), 'utf8'))
+          assert.ok(Array.isArray(installed))
+          const plugin = installed.find(entry => entry.id === `${manifest.name}@${marketplace.name}`)
+          assert.equal(plugin?.version, manifest.version)
+          assert.equal(plugin?.enabled, true)
+          assert.deepEqual(plugin?.mcpServers, { pushary: { type: 'http', url: 'https://pushary.com/api/mcp/mcp' } })
+          assert.equal(manifest.hooks, undefined)
+          assert.equal(existsSync('hooks'), false)
+          const inventory = readFileSync(join(process.env.RUNNER_TEMP, 'plugin-details.txt'), 'utf8')
+          console.log(inventory)
+          assert.match(inventory, /Skills \(1\)\s+pushary-cowork/)
+          assert.match(inventory, /Hooks \(0\)/)
+          JS

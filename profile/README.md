@@ -12,6 +12,9 @@ The framework adapters are MIT-licensed. Real phone delivery uses the hosted Pus
 | Vercel AI SDK | [Question tools and enforced tool approvals](https://github.com/Pushary/pushary-ai-sdk) |
 | LangGraph / LangChain | [Checkpointed reviews in TypeScript and Python](https://github.com/Pushary/pushary-langgraph) |
 | OpenAI Agents SDK | [Questions and tool approval interruptions](https://github.com/Pushary/pushary-openai-agents) |
+| Claude Agent SDK | [Phone approval hooks for agent tools](https://github.com/Pushary/pushary-claude-agent-sdk) |
+| Eve | [Question tools and an installable extension](https://github.com/Pushary/pushary-eve) |
+| Durable workflows | [Persist a decision and resume after review](https://github.com/Pushary/pushary-durable) |
 | CrewAI | [Ask for a customer decision from a task](https://github.com/Pushary/pushary-crewai) |
 | Pydantic AI | [Question tools and approval handling](https://github.com/Pushary/pushary-pydantic-ai) |
 | Haystack | [Questions inside a pipeline](https://github.com/Pushary/pushary-haystack) |
@@ -25,7 +28,7 @@ The browser demo uses temporary state and does not prove native push delivery. R
 
 ## Use Pushary with your own coding agent
 
-For your personal agent workflow, start with the [MCP server and agent integrations](https://github.com/Pushary/pushary-skill), [Cursor plugin](https://github.com/Pushary/cursor-plugin), [VS Code plugin](https://github.com/Pushary/vscode-plugin) or [Claude Cowork plugin](https://github.com/Pushary/cowork-plugin). Hermes users can install the [Pushary plugin](https://github.com/Pushary/hermes-plugin-pushary) for questions, task updates and native approval transport.
+For your personal agent workflow, start with the [MCP server and agent integrations](https://github.com/Pushary/pushary-skill), [Cursor plugin](https://github.com/Pushary/cursor-plugin), [VS Code plugin](https://github.com/Pushary/vscode-plugin), [Claude Chat and Code plugin](https://github.com/Pushary/claude-plugin), or [Claude Cowork plugin](https://github.com/Pushary/cowork-plugin). Hermes users can install the [Pushary plugin](https://github.com/Pushary/hermes-plugin-pushary) for questions, task updates and native approval transport. Choose one Pushary installation per app. The plugin source is MIT-licensed; personal phone delivery requires a hosted Pushary plan.
 
 ## Help improve an integration
 
