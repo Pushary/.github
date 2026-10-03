@@ -19,7 +19,7 @@ The browser demo uses temporary state and does not prove native push delivery. R
 
 ## Use Pushary with your own coding agent
 
-For your personal agent workflow, start with the [MCP server and agent integrations](https://github.com/Pushary/pushary-skill), [Cursor plugin](https://github.com/Pushary/cursor-plugin), [VS Code plugin](https://github.com/Pushary/vscode-plugin) or [Claude Cowork plugin](https://github.com/Pushary/cowork-plugin).
+For your personal agent workflow, start with the [MCP server and agent integrations](https://github.com/Pushary/pushary-skill), [Cursor plugin](https://github.com/Pushary/cursor-plugin), [VS Code plugin](https://github.com/Pushary/vscode-plugin), [Claude Chat and Code plugin](https://github.com/Pushary/claude-plugin), or [Claude Cowork plugin](https://github.com/Pushary/cowork-plugin). Choose one Pushary installation per app. The plugin source is MIT-licensed; personal phone delivery requires a hosted Pushary plan.
 
 ## Help improve an integration
 
