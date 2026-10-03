@@ -23,7 +23,6 @@ jobs:
       run:
         shell: bash
     env:
-      CLAUDE_CONFIG_DIR: ${{ runner.temp }}/pushary-plugin-check
       CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC: "1"
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
@@ -32,6 +31,8 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: "22"
+      - name: Set an isolated profile
+        run: echo "CLAUDE_CONFIG_DIR=$RUNNER_TEMP/pushary-plugin-check" >> "$GITHUB_ENV"
       - name: Install Claude Code
         run: npm install --global @anthropic-ai/claude-code@2.1.288
       - name: Validate both manifests
