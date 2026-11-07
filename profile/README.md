@@ -1,8 +1,20 @@
-# Your agent asks. Your customer answers.
+# Your AI agent asks. The right person answers, from their phone.
 
-Pushary connects agent workflows to the people who need to decide. Customers answer yes/no questions, choose an option or type a response in the native Pushary app. Your application validates the answer and continues the right action.
+Pushary sends your AI coding agents' approvals and questions to your phone, Mac or dashboard, and the answer goes back to the session.
 
-## Build customer reviews into your product
+## Use Pushary with your coding agents
+
+```bash
+npx pushary@latest setup
+```
+
+One command connects Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Hermes and more. Start with the [skill and agent integrations](https://github.com/Pushary/pushary-skill), or the [Cursor plugin](https://github.com/Pushary/cursor-plugin), [VS Code plugin](https://github.com/Pushary/vscode-plugin), [Claude Chat and Code plugin](https://github.com/Pushary/claude-plugin) or [Claude Cowork plugin](https://github.com/Pushary/cowork-plugin). Hermes users can install the [Pushary plugin](https://github.com/Pushary/hermes-plugin-pushary). Choose one Pushary installation per app. The plugin source is MIT-licensed; phone delivery needs a hosted Pushary plan.
+
+## Pushary for Teams
+
+Each person's agents ask that person. An owner can send a chosen step, such as `git push` to the `infra` repository, to a lead or a role instead, with one routing rule that covers Claude Code, Codex, Cursor and Gemini CLI. The team gets one record of whose agent asked and who answered. [See how it works](https://pushary.com/teams?utm_source=github&utm_medium=org-profile&utm_campaign=team&utm_content=teams).
+
+## Build customer approvals into your own product
 
 The framework adapters are MIT-licensed. Real phone delivery uses the hosted Pushary Partner service. Your customer installs the app; they do not need a Pushary account or paid plan.
 
@@ -25,10 +37,6 @@ The framework adapters are MIT-licensed. Real phone delivery uses the hosted Pus
 For Python examples, start with the [Python recipe hub](https://github.com/Pushary/pushary-python).
 
 The browser demo uses temporary state and does not prove native push delivery. Repository examples explain how to run locally and connect a real test phone. Your application keeps ownership of authentication, execution, persistence and recovery.
-
-## Use Pushary with your own coding agent
-
-For your personal agent workflow, start with the [MCP server and agent integrations](https://github.com/Pushary/pushary-skill), [Cursor plugin](https://github.com/Pushary/cursor-plugin), [VS Code plugin](https://github.com/Pushary/vscode-plugin), [Claude Chat and Code plugin](https://github.com/Pushary/claude-plugin), or [Claude Cowork plugin](https://github.com/Pushary/cowork-plugin). Hermes users can install the [Pushary plugin](https://github.com/Pushary/hermes-plugin-pushary) for questions, task updates and native approval transport. Choose one Pushary installation per app. The plugin source is MIT-licensed; personal phone delivery requires a hosted Pushary plan.
 
 ## Help improve an integration
 
