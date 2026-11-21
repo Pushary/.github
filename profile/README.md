@@ -12,16 +12,16 @@ One command connects Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Hermes an
 
 ## Plans
 
-Each plan starts with a 3-day trial.
+Each plan starts with a 3-day trial for new customers. During the trial, Agent, Agent Pro and Team include 5 call minutes.
 
 | Plan | Price | Who it is for |
 | --- | --- | --- |
-| [Agent](https://pushary.com/pricing?utm_source=github&utm_medium=org-profile&utm_campaign=plans&utm_content=agent) | $9.99 a month | One person and every AI agent they run. Approve, deny or answer from your phone or Mac. 10 call minutes a month. |
-| [Agent Pro](https://pushary.com/pricing?utm_source=github&utm_medium=org-profile&utm_campaign=plans&utm_content=agent-pro) | $19.99 a month | Everything in Agent, plus unlimited notifications, budgets and priority support. 20 call minutes a month. |
+| [Agent](https://pushary.com/pricing?utm_source=github&utm_medium=org-profile&utm_campaign=agent&utm_content=plans) | $9.99 a month | One person and every AI agent they run. Approve, deny or answer from your phone or Mac. 10 call minutes a month. |
+| [Agent Pro](https://pushary.com/pricing?utm_source=github&utm_medium=org-profile&utm_campaign=agent-pro&utm_content=plans) | $19.99 a month | Everything in Agent, plus unlimited notifications, budgets and priority support. 20 call minutes a month. |
 | [Team](https://pushary.com/teams?utm_source=github&utm_medium=org-profile&utm_campaign=team&utm_content=plans) | $59 a month for 5 people, $12 for each extra person | A shared record of what your team's agents asked and who answered, with export. 60 call minutes a month. |
 | [Partner](https://pushary.com/partners?utm_source=github&utm_medium=org-profile&utm_campaign=partner&utm_content=plans) | From $99 a month | Companies that ship an AI agent to their own users. Your users approve what it does from their phone. |
 
-Missed the push? After 2 minutes Pushary can call you and read the request, and you approve it, say no or tell the agent what to do. Calls need a confirmed phone number and are in English. [How phone calls work](https://pushary.com/claude-code-phone-call?utm_source=github&utm_medium=org-profile&utm_campaign=calls&utm_content=plans).
+Missed the push? On Agent, Agent Pro and Team, Pushary can call you, by default after 2 minutes, and read the request. You approve it, say no or tell the agent what to do. Calls need a confirmed phone number and work in English, German, French and Dutch. [How phone calls work](https://pushary.com/docs/agents/phone-calls?utm_source=github&utm_medium=org-profile&utm_campaign=calls&utm_content=plans).
 
 ## Pushary for Teams
 
