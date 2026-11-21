@@ -1,14 +1,27 @@
 # Your AI agent asks. The right person answers, from their phone.
 
-Pushary sends your AI coding agents' approvals and questions to your phone, Mac or dashboard, and the answer goes back to the session.
+Pushary sends your AI agents' approvals and questions to your phone, Mac or dashboard, and the answer goes back to the session.
 
-## Use Pushary with your coding agents
+## Use Pushary with your AI agents
 
 ```bash
-npx pushary@latest setup
+npx -y pushary@latest setup
 ```
 
-One command connects Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Hermes and more. Start with the [skill and agent integrations](https://github.com/Pushary/pushary-skill), or the [Cursor plugin](https://github.com/Pushary/cursor-plugin), [VS Code plugin](https://github.com/Pushary/vscode-plugin), [Claude Chat and Code plugin](https://github.com/Pushary/claude-plugin) or [Claude Cowork plugin](https://github.com/Pushary/cowork-plugin). Hermes users can install the [Pushary plugin](https://github.com/Pushary/hermes-plugin-pushary). Choose one Pushary installation per app. The plugin source is MIT-licensed; phone delivery needs a hosted Pushary plan.
+One command connects Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Hermes and more. Start with the [skill and agent integrations](https://github.com/Pushary/pushary-skill), or the [Cursor plugin](https://github.com/Pushary/cursor-plugin), [VS Code plugin](https://github.com/Pushary/vscode-plugin), [Claude Chat and Code plugin](https://github.com/Pushary/claude-plugin) or [Claude Cowork plugin](https://github.com/Pushary/cowork-plugin). Hermes users can install the [Pushary plugin](https://github.com/Pushary/hermes-plugin-pushary). Choose one Pushary installation per app. The plugin source is MIT-licensed; phone delivery needs a [hosted Pushary plan](#plans).
+
+## Plans
+
+Each plan starts with a 3-day trial.
+
+| Plan | Price | Who it is for |
+| --- | --- | --- |
+| [Agent](https://pushary.com/pricing?utm_source=github&utm_medium=org-profile&utm_campaign=plans&utm_content=agent) | $9.99 a month | One person and every AI agent they run. Approve, deny or answer from your phone or Mac. 10 call minutes a month. |
+| [Agent Pro](https://pushary.com/pricing?utm_source=github&utm_medium=org-profile&utm_campaign=plans&utm_content=agent-pro) | $19.99 a month | Everything in Agent, plus unlimited notifications, budgets and priority support. 20 call minutes a month. |
+| [Team](https://pushary.com/teams?utm_source=github&utm_medium=org-profile&utm_campaign=team&utm_content=plans) | $59 a month for 5 people, $12 for each extra person | A shared record of what your team's agents asked and who answered, with export. 60 call minutes a month. |
+| [Partner](https://pushary.com/partners?utm_source=github&utm_medium=org-profile&utm_campaign=partner&utm_content=plans) | From $99 a month | Companies that ship an AI agent to their own users. Your users approve what it does from their phone. |
+
+Missed the push? After 2 minutes Pushary can call you and read the request, and you approve it, say no or tell the agent what to do. Calls need a confirmed phone number and are in English. [How phone calls work](https://pushary.com/claude-code-phone-call?utm_source=github&utm_medium=org-profile&utm_campaign=calls&utm_content=plans).
 
 ## Pushary for Teams
 
