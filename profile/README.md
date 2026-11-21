@@ -21,7 +21,7 @@ Each plan starts with a 3-day trial for new customers. During the trial, Agent, 
 | [Team](https://pushary.com/teams?utm_source=github&utm_medium=org-profile&utm_campaign=team&utm_content=plans) | $59 a month for 5 people, $12 for each extra person | A shared record of what your team's agents asked and who answered, with export. 60 call minutes a month. |
 | [Partner](https://pushary.com/partners?utm_source=github&utm_medium=org-profile&utm_campaign=partner&utm_content=plans) | From $99 a month | Companies that ship an AI agent to their own users. Your users approve what it does from their phone. |
 
-Missed the push? On Agent, Agent Pro and Team, Pushary can call you, by default after 2 minutes, and read the request. You approve it, say no or tell the agent what to do. Calls need a confirmed phone number. [How phone calls work](https://pushary.com/docs/agents/phone-calls?utm_source=github&utm_medium=org-profile&utm_campaign=calls&utm_content=plans).
+Missed the push? On Agent, Agent Pro and Team, Pushary can call you, by default after 2 minutes, and read the request. You approve it, say no or tell the agent what to do. Calls need a confirmed phone number and work in English, German, French and Dutch. [How phone calls work](https://pushary.com/docs/agents/phone-calls?utm_source=github&utm_medium=org-profile&utm_campaign=calls&utm_content=plans).
 
 ## Pushary for Teams
 
